@@ -1,0 +1,65 @@
+"use client";
+
+import { MapPin, Mail, Phone, Instagram, Facebook } from "lucide-react";
+import Link from "next/link";
+
+export function Footer() {
+  return (
+    <footer id="location" className="bg-foreground text-background py-24 px-6 border-t border-white/10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="space-y-6">
+          <Link href="/" className="text-2xl font-serif tracking-tight">
+            THE <span className="text-gold italic">HAVEN</span>
+          </Link>
+          <p className="text-background/60 font-sans leading-relaxed">
+            Your ultimate Uganda retreat. Serene, secure, and modern living in the heart of Bwebajja.
+          </p>
+        </div>
+
+        <div className="space-y-6">
+          <h4 className="text-lg font-serif">Contact Us</h4>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-4 text-background/60">
+              <Phone className="text-gold w-5 h-5" />
+              <span>+256 YOUR_NUMBER</span>
+            </li>
+            <li className="flex items-center gap-4 text-background/60">
+              <Mail className="text-gold w-5 h-5" />
+              <span>hello@bwebajjahaven.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h4 className="text-lg font-serif">Location</h4>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-4 text-background/60">
+              <MapPin className="text-gold w-5 h-5 shrink-0" />
+              <span>Bwebajja, Entebbe Road, Uganda (21km from Airport, 19km from Kampala)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h4 className="text-lg font-serif">Follow Us</h4>
+          <div className="flex gap-4">
+            <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
+              <Instagram size={20} />
+            </Link>
+            <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
+              <Facebook size={20} />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-widest text-background/40">
+        <p>© 2026 Luxury Haven Bwebajja. All rights reserved.</p>
+        <div className="flex gap-8 mt-4 md:mt-0">
+          <Link href="#" className="hover:text-gold transition-colors">Privacy Policy</Link>
+          <Link href="#" className="hover:text-gold transition-colors">Terms of Service</Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
