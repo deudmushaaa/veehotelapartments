@@ -3,6 +3,10 @@ import { Hero } from "@/components/Hero";
 import { Amenities } from "@/components/Amenities";
 import { Gallery } from "@/components/Gallery";
 import { Footer } from "@/components/Footer";
+import { FloatingCTA } from "@/components/FloatingCTA";
+import { MapSection } from "@/components/MapSection";
+import { BookingSection } from "@/components/BookingSection";
+import { VideoShowcase } from "@/components/VideoShowcase";
 
 export default function Home() {
   return (
@@ -20,13 +24,13 @@ export default function Home() {
             <div className="w-24 h-[1px] bg-gold" />
             <div className="space-y-6 text-lg text-foreground/70 font-sans leading-relaxed">
               <p>
-                Perfectly set between Entebbe Airport (21km) & Kampala (19km), our 2BR Haven in Bwebajja is more than just an apartment; it's a lifestyle.
+                Perfectly set between Entebbe Airport (21km) & Kampala (19km), **Vee Hotel Apartments** in Bwebajja is more than just a stay; it's a sanctuary.
               </p>
               <p>
-                Enjoy a master suite, twin room, 2 baths & a stylish lounge with Smart TV. Our high-end kitchen is equipped with everything you need: oven, microwave, and coffee maker.
+                Enjoy a master suite with panoramic views of Lake Victoria, a twin room, and a stylish lounge featuring a 55-inch Smart TV. Our gourmet kitchen is fully equipped with everything from an oven to a coffee maker.
               </p>
               <p>
-                Whether you're looking for a peaceful retreat after a long flight or a secure base for your Kampala business trip, we provide the perfect blend of modern comfort and Ugandan serenity.
+                Whether you're relaxing by the sparkling pool or enjoying the solar-powered convenience, we provide the perfect blend of modern luxury and serene Ugandan atmosphere.
               </p>
             </div>
             <div className="flex gap-12 pt-4">
@@ -47,18 +51,22 @@ export default function Home() {
           
           <div className="relative aspect-square md:aspect-video lg:aspect-square group overflow-hidden luxury-shadow">
             <img 
-              src="/bedroom.png" 
-              alt="Luxury bedroom" 
-              className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+              src="/images/view.jpg" 
+              alt="Panoramic View of Lake Victoria" 
+              className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 border-[20px] border-white/10 pointer-events-none" />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
           </div>
         </div>
       </section>
 
       <Amenities />
-      <Gallery />
+      <VideoShowcase /> {/* Added the cinematic video showcase */}
+      <Gallery limit={15} />
+      <MapSection />
+      <BookingSection />
       <Footer />
+      <FloatingCTA />
     </main>
   );
 }

@@ -9,8 +9,8 @@ export function Hero() {
       {/* Hero Image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero.png"
-          alt="Luxury Bwebajja Haven"
+          src="/images/hero.jpg"
+          alt="Vee Hotel Apartments"
           fill
           className="object-cover"
           priority
@@ -36,11 +36,11 @@ export function Hero() {
           </motion.p>
           
           <h1 className="text-5xl md:text-7xl font-serif leading-tight">
-            Luxury 2BR Haven in <span className="italic">Bwebajja</span>
+            Vee Hotel <span className="italic text-gold">Apartments</span>
           </h1>
           
           <p className="text-lg md:text-xl font-sans text-white/90 leading-relaxed max-w-xl">
-            A premium retreat perfectly set between Entebbe Airport and Kampala. 
+            Luxury 2BR Haven in Bwebajja. A premium retreat perfectly set between Entebbe Airport and Kampala. 
             Experience the best of Entebbe Road for just $100/night.
           </p>
 

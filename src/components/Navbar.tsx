@@ -40,7 +40,7 @@ export function Navbar() {
           href="/" 
           className="text-2xl font-serif tracking-tight text-foreground"
         >
-          THE <span className="text-gold italic">HAVEN</span>
+          VEE HOTEL <span className="text-gold italic">APARTMENTS</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -55,9 +55,9 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            href="https://wa.me/YOUR_PHONE_NUMBER"
+            href="https://wa.me/256776979729"
             target="_blank"
-            className="px-6 py-2 bg-foreground text-background text-sm uppercase tracking-widest hover:bg-gold hover:text-foreground transition-all duration-300"
+            className="px-6 py-2 bg-foreground text-background text-sm uppercase tracking-widest hover:bg-gold transition-all duration-300"
           >
             Book Now
           </Link>
@@ -90,7 +90,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            href="https://wa.me/YOUR_PHONE_NUMBER"
+            href="https://wa.me/256776979729"
             className="w-full py-3 bg-gold text-white text-center rounded-sm uppercase tracking-widest"
           >
             Book Now

@@ -1,11 +1,11 @@
 "use client";
 
-import { MapPin, Mail, Phone, Instagram, Facebook } from "lucide-react";
+import { MapPin, Mail, Phone, Camera, Globe } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer id="location" className="bg-foreground text-background py-24 px-6 border-t border-white/10">
+    <footer className="bg-foreground text-background py-24 px-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         <div className="space-y-6">
           <Link href="/" className="text-2xl font-serif tracking-tight">
@@ -21,11 +21,15 @@ export function Footer() {
           <ul className="space-y-4">
             <li className="flex items-center gap-4 text-background/60">
               <Phone className="text-gold w-5 h-5" />
-              <span>+256 YOUR_NUMBER</span>
+              <span>+256 776 979 729</span>
+            </li>
+            <li className="flex items-center gap-4 text-background/60">
+              <Phone className="text-gold w-5 h-5" />
+              <span>+256 703 225 193</span>
             </li>
             <li className="flex items-center gap-4 text-background/60">
               <Mail className="text-gold w-5 h-5" />
-              <span>hello@bwebajjahaven.com</span>
+              <span>info@veehotelapartments.com</span>
             </li>
           </ul>
         </div>
@@ -34,7 +38,7 @@ export function Footer() {
           <h4 className="text-lg font-serif">Location</h4>
           <ul className="space-y-4">
             <li className="flex items-start gap-4 text-background/60">
-              <MapPin className="text-gold w-5 h-5 shrink-0" />
+              <MapPin className="text-gold w-5 h-5 shrink-0 mt-1" />
               <span>Bwebajja, Entebbe Road, Uganda (21km from Airport, 19km from Kampala)</span>
             </li>
           </ul>
@@ -44,10 +48,10 @@ export function Footer() {
           <h4 className="text-lg font-serif">Follow Us</h4>
           <div className="flex gap-4">
             <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
-              <Instagram size={20} />
+              <Camera size={20} />
             </Link>
             <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
-              <Facebook size={20} />
+              <Globe size={20} />
             </Link>
           </div>
         </div>

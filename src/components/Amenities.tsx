@@ -1,14 +1,14 @@
-import { Star, Shield, Wifi, Coffee, Waves, Car, Utensils, Maximize } from "lucide-react";
+import { Star, Shield, Wifi, Coffee, Waves, Car, Utensils, Sun, Zap, Tv } from "lucide-react";
 
 const amenities = [
-  { name: "Master Suite", icon: Star, description: "Luxurious queen bed with private bath." },
-  { name: "Sparkling Pool", icon: Waves, description: "Perfect for a refreshing dip anytime." },
+  { name: "Master Suite", icon: Star, description: "Luxurious queen bed with private bath and balcony." },
+  { name: "Sparkling Pool", icon: Waves, description: "Refreshing pool with twilight lighting and loungers." },
+  { name: "Lake Victoria View", icon: Sun, description: "Stunning panoramic vistas of the lake from the balcony." },
+  { name: "Eco-Solar Powered", icon: Zap, description: "Sustainable energy with backup solar power system." },
+  { name: "Smart TV & Sound", icon: Tv, description: "55-inch Smart TV with cinematic soundbar system." },
+  { name: "High-end Kitchen", icon: Utensils, description: "Fully equipped with oven, microwave & coffee maker." },
   { name: "High-Speed Wi-Fi", icon: Wifi, description: "Fast and reliable internet for work or play." },
-  { name: "Premium Kitchen", icon: Coffee, description: "Equipped with oven, microwave & coffee maker." },
-  { name: "24/7 Security", icon: Shield, description: "Gated community with on-site reception." },
-  { name: "Secure Parking", icon: Car, description: "Private parking space for guests." },
-  { name: "Elegant Dining", icon: Utensils, description: "Stylish area for shared meals." },
-  { name: "Private Garden", icon: Maximize, description: "Serene terrace and lush greenery." },
+  { name: "24/7 Security", icon: Shield, description: "Gated community with secure on-site reception." },
 ];
 
 export function Amenities() {

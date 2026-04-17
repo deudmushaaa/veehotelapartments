@@ -3,23 +3,34 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { Maximize2, X } from "lucide-react";
+import { Maximize2, X, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
-// For demonstration, we'll use our generated images and then populate the rest
-const images = [
-  { src: "/hero.png", title: "Luxury Lounge" },
-  { src: "/bedroom.png", title: "Master Bedroom" },
-  { src: "/hero.png", title: "Pool Side View" },
-  { src: "/bedroom.png", title: "Elegant Dining" },
-  // ... let's simulate the 70+ images with placeholders for now
-  ...Array.from({ length: 68 }).map((_, i) => ({
-    src: `https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop`,
-    title: `Gallery Image ${i + 5}`
+const allImages = [
+  { src: "/gallery/img1.jpg", title: "Aerial Building View" },
+  { src: "/gallery/img2.jpg", title: "Sparkling Swimming Pool" },
+  { src: "/gallery/img3.jpg", title: "Lake Victoria Panorama" },
+  { src: "/gallery/img4.jpg", title: "Gourmet Kitchen" },
+  { src: "/gallery/img5.jpg", title: "Luxury Living Room" },
+  { src: "/gallery/img6.jpg", title: "Eco-Friendly Solar Setup" },
+  { src: "/gallery/img7.jpg", title: "Elegant Interior" },
+  { src: "/gallery/img8.jpg", title: "Spacious Lounge" },
+  { src: "/gallery/img9.jpg", title: "Modern Bedroom" },
+  { src: "/gallery/img10.jpg", title: "Bathroom Details" },
+  { src: "/gallery/img11.jpg", title: "Dining Experience" },
+  { src: "/gallery/img12.jpg", title: "Master Suite" },
+  { src: "/gallery/img13.jpg", title: "View from Balcony" },
+  { src: "/gallery/img14.jpg", title: "Property Landscape" },
+  { src: "/gallery/img15.jpg", title: "Night Ambiance" },
+  ...Array.from({ length: 55 }).map((_, i) => ({
+    src: `/gallery/img${(i % 15) + 1}.jpg`, // Cycling for now to maintain the count
+    title: `Gallery Image ${i + 16}`
   }))
 ];
 
-export function Gallery() {
+export function Gallery({ limit }: { limit?: number }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const imagesToShow = limit ? allImages.slice(0, limit) : allImages;
 
   return (
     <section id="gallery" className="py-24 bg-background px-6">
@@ -27,13 +38,14 @@ export function Gallery() {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-serif">The Gallery</h2>
           <div className="w-24 h-[1px] bg-gold mx-auto" />
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto font-sans">
-            Witness the serenity and modern elegance of Luxury Haven. 70+ high-quality captures.
+           <p className="text-lg text-foreground/60 max-w-2xl mx-auto font-sans">
+            Witness the serenity and modern elegance of Vee Hotel Apartments. 
+            {limit ? " A curated selection of our finest spaces." : " Explore all 70+ high-quality captures."}
           </p>
         </div>
 
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {images.map((image, idx) => (
+          {imagesToShow.map((image, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -60,9 +72,19 @@ export function Gallery() {
             </motion.div>
           ))}
         </div>
+
+        {limit && (
+          <div className="mt-16 text-center">
+            <Link 
+              href="/gallery"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-foreground text-background uppercase tracking-[0.2em] text-xs font-bold hover:bg-gold transition-colors duration-300"
+            >
+              View More Photos <ChevronRight size={16} />
+            </Link>
+          </div>
+        )}
       </div>
 
-      {/* Lightbox */}
       {selectedImage && (
         <div 
           className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4"
