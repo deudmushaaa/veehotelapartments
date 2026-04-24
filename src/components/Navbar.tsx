@@ -40,7 +40,7 @@ export function Navbar() {
           href="/" 
           className="text-2xl font-serif tracking-tight text-foreground"
         >
-          VEE HOTEL <span className="text-gold italic">APARTMENTS</span>
+          VEE SERVICED <span className="text-gold italic">APARTMENTS & HOTEL</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -2,8 +2,8 @@ import { Phone, MessageSquare, Mail, Globe, Calendar, Home } from "lucide-react"
 import Link from "next/link";
 
 const bookingPlatforms = [
-  { name: "Booking.com", icon: Globe, link: "#", color: "hover:text-blue-600" },
-  { name: "Airbnb", icon: Home, link: "#", color: "hover:text-rose-500" },
+  { name: "Booking.com", icon: Globe, link: "https://www.booking.com/hotel/ug/vee-amp-furnished-apartments.html", color: "hover:text-blue-600" },
+  { name: "Airbnb", icon: Home, link: "https://www.airbnb.com/p/VeeServicedApartmentsandHotel", color: "hover:text-rose-500" },
   { name: "Expedia", icon: Calendar, link: "#", color: "hover:text-yellow-600" },
   { name: "On-site Booking", icon: Calendar, link: "tel:+256776979729", color: "hover:text-gold" },
   { name: "WhatsApp", icon: MessageSquare, link: "https://wa.me/256776979729", color: "hover:text-green-500" },

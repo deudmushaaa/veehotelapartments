@@ -19,7 +19,7 @@ export function MapSection() {
               <div className="flex items-start gap-4 p-6 bg-muted/30 border border-muted luxury-shadow">
                 <MapPin className="text-gold w-6 h-6 shrink-0 mt-1" />
                 <div className="space-y-2">
-                    <p className="font-bold text-foreground">Vee Hotel Apartments</p>
+                    <p className="font-bold text-foreground">Vee Serviced Apartments & Hotel</p>
                     <p className="text-sm opacity-70">Entebbe Road, Bwebajja, Uganda</p>
                     <p className="text-sm opacity-70">21km from Entebbe International Airport</p>
                     <p className="text-sm opacity-70">19km from Kampala Central Business District</p>

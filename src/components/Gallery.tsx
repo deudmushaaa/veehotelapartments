@@ -39,7 +39,7 @@ export function Gallery({ limit }: { limit?: number }) {
           <h2 className="text-4xl md:text-5xl font-serif">The Gallery</h2>
           <div className="w-24 h-[1px] bg-gold mx-auto" />
            <p className="text-lg text-foreground/60 max-w-2xl mx-auto font-sans">
-            Witness the serenity and modern elegance of Vee Hotel Apartments. 
+            Witness the serenity and modern elegance of Vee Serviced Apartments & Hotel. 
             {limit ? " A curated selection of our finest spaces." : " Explore all 70+ high-quality captures."}
           </p>
         </div>

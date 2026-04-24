@@ -1,14 +1,25 @@
-import { Star, Shield, Wifi, Coffee, Waves, Car, Utensils, Sun, Zap, Tv } from "lucide-react";
+import { 
+  Shield, Wifi, Coffee, Waves, Car, Utensils, Sun, Zap, Tv, ChefHat, Trees, Plane,
+  Dumbbell, Bed, Sparkles, Fan
+} from "lucide-react";
 
 const amenities = [
-  { name: "Master Suite", icon: Star, description: "Luxurious queen bed with private bath and balcony." },
+  { name: "Bed & Breakfast", icon: Coffee, description: "Start your morning with a curated selection of fresh, local delights." },
   { name: "Sparkling Pool", icon: Waves, description: "Refreshing pool with twilight lighting and loungers." },
   { name: "Lake Victoria View", icon: Sun, description: "Stunning panoramic vistas of the lake from the balcony." },
+  { name: "Modern Fitness Gym", icon: Dumbbell, description: "Stay active with our fully equipped on-site fitness center." },
+  { name: "On-site Restaurant", icon: ChefHat, description: "Enjoy gourmet meals prepared by our professional chefs." },
+  { name: "Private Garden", icon: Trees, description: "Lush green spaces perfect for relaxation and fresh air." },
+  { name: "Airport Taxi", icon: Plane, description: "Reliable airport transfers and local shuttles available." },
   { name: "Eco-Solar Powered", icon: Zap, description: "Sustainable energy with backup solar power system." },
   { name: "Smart TV & Sound", icon: Tv, description: "55-inch Smart TV with cinematic soundbar system." },
   { name: "High-end Kitchen", icon: Utensils, description: "Fully equipped with oven, microwave & coffee maker." },
   { name: "High-Speed Wi-Fi", icon: Wifi, description: "Fast and reliable internet for work or play." },
   { name: "24/7 Security", icon: Shield, description: "Gated community with secure on-site reception." },
+  { name: "Secure Parking", icon: Car, description: "Safe and spacious parking for all our guests." },
+  { name: "Daily Housekeeping", icon: Sparkles, description: "Pristine living conditions with our professional cleaning staff." },
+  { name: "Air Conditioning", icon: Fan, description: "Optimal climate control for your comfort in every room." },
+  { name: "Luxury Bedding", icon: Bed, description: "Premium linens and comfortable mattresses for a restful sleep." },
 ];
 
 export function Amenities() {

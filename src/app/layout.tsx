@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "The Bwebajja Haven | Luxury 2BR Apartment in Uganda",
-  description: "Experience the ultimate Uganda retreat. A luxury 2-bedroom apartment perfectly set between Entebbe Airport and Kampala. Pool, private garden, and high-end amenities.",
+  title: "Vee Serviced Apartments & Hotel | Luxury 2BR Apartment in Uganda",
+  description: "Experience the ultimate Uganda retreat at Vee Serviced Apartments & Hotel. A luxury 2-bedroom apartment perfectly set between Entebbe Airport and Kampala. Pool, private garden, and high-end amenities.",
 };
 
 export default function RootLayout({

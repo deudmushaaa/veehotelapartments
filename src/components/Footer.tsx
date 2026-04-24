@@ -9,10 +9,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         <div className="space-y-6">
           <Link href="/" className="text-2xl font-serif tracking-tight">
-            THE <span className="text-gold italic">HAVEN</span>
+            VEE SERVICED <span className="text-gold italic">APARTMENTS & HOTEL</span>
           </Link>
           <p className="text-background/60 font-sans leading-relaxed">
-            Your ultimate Uganda retreat. Serene, secure, and modern living in the heart of Bwebajja.
+            Your ultimate Uganda retreat at Vee Serviced Apartments & Hotel. Serene, secure, and modern living in the heart of Bwebajja.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-widest text-background/40">
-        <p>© 2026 Luxury Haven Bwebajja. All rights reserved.</p>
+        <p>© 2026 Vee Serviced Apartments & Hotel. All rights reserved.</p>
         <div className="flex gap-8 mt-4 md:mt-0">
           <Link href="#" className="hover:text-gold transition-colors">Privacy Policy</Link>
           <Link href="#" className="hover:text-gold transition-colors">Terms of Service</Link>

@@ -13,7 +13,7 @@ export function VideoShowcase() {
     <section id="videos" className="py-24 bg-muted/20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-serif">A Glimpse of <span className="text-gold">Vee Hotel</span></h2>
+          <h2 className="text-4xl md:text-5xl font-serif">A Glimpse of <span className="text-gold">Vee Serviced Apartments & Hotel</span></h2>
           <div className="w-24 h-[1px] bg-gold mx-auto" />
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto font-sans">
             Take a cinematic journey through our property and experience the luxury before you arrive.

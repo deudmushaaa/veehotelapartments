@@ -10,7 +10,7 @@ export default function GalleryPage() {
         <div className="max-w-7xl mx-auto px-6 py-12 text-center">
             <h1 className="text-5xl md:text-7xl font-serif mb-6">Complete Gallery</h1>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto uppercase tracking-widest text-xs">
-                Vee Hotel Apartments — Every angle of comfort
+                Vee Serviced Apartments & Hotel — Every angle of comfort
             </p>
         </div>
       </div>

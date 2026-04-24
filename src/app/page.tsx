@@ -24,13 +24,13 @@ export default function Home() {
             <div className="w-24 h-[1px] bg-gold" />
             <div className="space-y-6 text-lg text-foreground/70 font-sans leading-relaxed">
               <p>
-                Perfectly set between Entebbe Airport (21km) & Kampala (19km), **Vee Hotel Apartments** in Bwebajja is more than just a stay; it's a sanctuary.
+                Begin your day with our **Bed & Breakfast service**, a hallmark of the hospitality at **Vee Serviced Apartments & Hotel**. Perfectly set between Entebbe Airport (21km) & Kampala (19km) in Bwebajja, we offer more than just a stay; we offer a sanctuary.
               </p>
               <p>
-                Enjoy a master suite with panoramic views of Lake Victoria, a twin room, and a stylish lounge featuring a 55-inch Smart TV. Our gourmet kitchen is fully equipped with everything from an oven to a coffee maker.
+                Our property features **8 uniquely named units**, each offering a distinct atmosphere of peace and luxury: **Bethel, Eden, Horeb, Moriah, Ramah, Shilloh, Sinai, and Zion**.
               </p>
               <p>
-                Whether you're relaxing by the sparkling pool or enjoying the solar-powered convenience, we provide the perfect blend of modern luxury and serene Ugandan atmosphere.
+                Each apartment features a master suite with panoramic views of Lake Victoria, a twin room, and a stylish lounge with a 55-inch Smart TV. With a fully equipped gourmet kitchen and solar-powered convenience, we provide the perfect blend of modern luxury and serene Ugandan charm.
               </p>
             </div>
             <div className="flex gap-12 pt-4">
@@ -51,8 +51,8 @@ export default function Home() {
           
           <div className="relative aspect-square md:aspect-video lg:aspect-square group overflow-hidden luxury-shadow">
             <img 
-              src="/images/view.jpg" 
-              alt="Panoramic View of Lake Victoria" 
+              src="/images/section2.jpg" 
+              alt="Luxury Master Bedroom" 
               className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
