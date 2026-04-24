@@ -7,6 +7,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { MapSection } from "@/components/MapSection";
 import { BookingSection } from "@/components/BookingSection";
 import { VideoShowcase } from "@/components/VideoShowcase";
+import { BrandStory } from "@/components/BrandStory";
 
 export default function Home() {
   return (
@@ -59,6 +60,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <BrandStory />
 
       <Amenities />
       <VideoShowcase /> {/* Added the cinematic video showcase */}

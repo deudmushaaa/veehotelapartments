@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-screen min-h-[700px] w-full overflow-hidden">
+    <section id="home" className="relative h-[70vh] md:h-screen min-h-[500px] md:min-h-[700px] w-full overflow-hidden bg-foreground">
       {/* Hero Image */}
       <div className="absolute inset-0">
         <Image
           src="/images/bwebajjaherosection.jpg"
           alt="Vee Serviced Apartments & Hotel"
           fill
-          className="object-cover"
+          className="object-contain md:object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -35,11 +35,11 @@ export function Hero() {
             Serene • Modern • Secure
           </motion.p>
           
-          <h1 className="text-5xl md:text-7xl font-serif leading-tight">
+          <h1 className="text-4xl md:text-7xl font-serif leading-tight">
             Vee Serviced <span className="italic text-gold">Apartments & Hotel</span>
           </h1>
           
-          <p className="text-lg md:text-xl font-sans text-white/90 leading-relaxed max-w-xl">
+          <p className="text-base md:text-xl font-sans text-white/90 leading-relaxed max-w-xl">
             Luxury 2BR Stay in Bwebajja. A premium retreat perfectly set between Entebbe Airport and Kampala. 
             Experience the best of Entebbe Road & Uganda for just $100/night.
           </p>
