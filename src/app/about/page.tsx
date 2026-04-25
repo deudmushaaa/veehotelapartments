@@ -33,6 +33,7 @@ export default function AboutPage() {
           </motion.h1>
           <div className="w-24 h-[1px] bg-gold mx-auto" />
         </div>
+      </div>
       </section>
 
       {/* About Us Section */}

@@ -17,6 +17,7 @@ export default function GalleryPage() {
             </p>
         </div>
       </div>
+    </div>
       <Gallery /> {/* No limit here means show all 70+ */}
       <Footer />
     </main>
