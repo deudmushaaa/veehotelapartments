@@ -7,11 +7,11 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Amenities", href: "#amenities" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Location", href: "#location" },
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Amenities", href: "/#amenities" },
+  { name: "Location", href: "/#location" },
 ];
 
 export function Navbar() {

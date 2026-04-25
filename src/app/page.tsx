@@ -7,7 +7,8 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { MapSection } from "@/components/MapSection";
 import { BookingSection } from "@/components/BookingSection";
 import { VideoShowcase } from "@/components/VideoShowcase";
-import { BrandStory } from "@/components/BrandStory";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -48,6 +49,14 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-widest opacity-50">Per Night</p>
               </div>
             </div>
+            <div className="pt-4">
+              <Link 
+                href="/about"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background uppercase tracking-widest text-xs font-bold hover:bg-gold transition-all duration-300"
+              >
+                Read Our Full Story <ChevronRight size={16} />
+              </Link>
+            </div>
           </div>
           
           <div className="relative aspect-square md:aspect-video lg:aspect-square group overflow-hidden luxury-shadow">
@@ -61,8 +70,6 @@ export default function Home() {
         </div>
       </section>
       
-      <BrandStory />
-
       <Amenities />
       <VideoShowcase /> {/* Added the cinematic video showcase */}
       <Gallery limit={15} />

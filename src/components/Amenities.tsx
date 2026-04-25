@@ -1,14 +1,17 @@
+"use client";
+
 import { 
   Shield, Wifi, Coffee, Waves, Car, Utensils, Sun, Zap, Tv, ChefHat, Trees, Plane,
-  Dumbbell, Bed, Sparkles, Fan
+  Dumbbell, Bed, Sparkles
 } from "lucide-react";
+import Link from "next/link";
 
 const amenities = [
   { name: "Bed & Breakfast", icon: Coffee, description: "Start your morning with a curated selection of fresh, local delights." },
   { name: "Sparkling Pool", icon: Waves, description: "Refreshing pool with twilight lighting and loungers." },
   { name: "Lake Victoria View", icon: Sun, description: "Stunning panoramic vistas of the lake from the balcony." },
   { name: "Modern Fitness Gym", icon: Dumbbell, description: "Stay active with our fully equipped on-site fitness center." },
-  { name: "On-site Restaurant", icon: ChefHat, description: "Enjoy gourmet meals prepared by our professional chefs." },
+  { name: "On-site Restaurant", icon: ChefHat, description: "Enjoy gourmet meals prepared by our professional chefs.", link: "/about#dining", linkText: "View Menu" },
   { name: "Private Garden", icon: Trees, description: "Lush green spaces perfect for relaxation and fresh air." },
   { name: "Airport Taxi", icon: Plane, description: "Reliable airport transfers and local shuttles available." },
   { name: "Eco-Solar Powered", icon: Zap, description: "Sustainable energy with backup solar power system." },
@@ -18,7 +21,6 @@ const amenities = [
   { name: "24/7 Security", icon: Shield, description: "Gated community with secure on-site reception." },
   { name: "Secure Parking", icon: Car, description: "Safe and spacious parking for all our guests." },
   { name: "Daily Housekeeping", icon: Sparkles, description: "Pristine living conditions with our professional cleaning staff." },
-  { name: "Air Conditioning", icon: Fan, description: "Optimal climate control for your comfort in every room." },
   { name: "Luxury Bedding", icon: Bed, description: "Premium linens and comfortable mattresses for a restful sleep." },
 ];
 
@@ -35,16 +37,24 @@ export function Amenities() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {amenities.map((item, idx) => (
+          {amenities.map((item: any, idx) => (
             <div 
               key={idx}
-              className="p-8 border border-muted hover:border-gold group transition-all duration-500 luxury-shadow bg-background"
+              className="p-8 border border-muted hover:border-gold group transition-all duration-500 luxury-shadow bg-background flex flex-col"
             >
               <item.icon className="w-10 h-10 mb-6 text-gold group-hover:scale-110 transition-transform duration-500" />
               <h3 className="text-xl font-serif mb-2">{item.name}</h3>
-              <p className="text-sm text-foreground/50 leading-relaxed">
+              <p className="text-sm text-foreground/50 leading-relaxed mb-4">
                 {item.description}
               </p>
+              {item.link && (
+                <Link 
+                  href={item.link} 
+                  className="mt-auto inline-block text-xs font-bold text-gold hover:underline uppercase tracking-widest"
+                >
+                  {item.linkText} →
+                </Link>
+              )}
             </div>
           ))}
         </div>

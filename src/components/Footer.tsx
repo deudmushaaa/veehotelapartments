@@ -45,14 +45,28 @@ export function Footer() {
         </div>
 
         <div className="space-y-6">
-          <h4 className="text-lg font-serif">Follow Us</h4>
-          <div className="flex gap-4">
-            <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
-              <Camera size={20} />
-            </Link>
-            <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
-              <Globe size={20} />
-            </Link>
+          <h4 className="text-lg font-serif">Quick Links</h4>
+          <ul className="space-y-4 text-background/60 font-sans">
+            <li>
+              <Link href="/#booking" className="hover:text-gold transition-colors">Book Your Stay</Link>
+            </li>
+            <li>
+              <Link href="/about#dining" className="hover:text-gold transition-colors">The Vee Kitchen (Menu)</Link>
+            </li>
+            <li>
+              <Link href="/about#safaris" className="hover:text-gold transition-colors">Vee Quest Safaris Limited</Link>
+            </li>
+          </ul>
+          <div className="pt-4 space-y-4">
+            <h4 className="text-sm font-serif text-gold uppercase tracking-widest">Follow Us</h4>
+            <div className="flex gap-4">
+              <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
+                <Camera size={20} />
+              </Link>
+              <Link href="#" className="p-3 bg-white/5 hover:bg-gold transition-colors">
+                <Globe size={20} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
