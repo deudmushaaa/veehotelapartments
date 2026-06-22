@@ -29,23 +29,14 @@ export function MapSection() {
           </div>
 
           <div className="relative aspect-video lg:aspect-square bg-muted overflow-hidden luxury-shadow order-1 lg:order-2 border border-muted group cursor-pointer">
-            {/* Real Map Placeholder UI */}
-            <div className="absolute inset-0 bg-[#e5e3df] flex items-center justify-center">
-               <div className="text-center space-y-4 px-8">
-                  <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6 scale-110 shadow-lg">
-                    <MapPin className="text-white w-8 h-8" />
-                  </div>
-                  <p className="text-foreground/40 font-sans uppercase tracking-widest text-xs">Interactive Map Loading...</p>
-               </div>
-               
-               {/* Aesthetic overlays to mimic a real map */}
-               <div className="absolute top-4 left-4 p-2 bg-white/80 backdrop-blur-sm text-[10px] space-y-1">
-                 <div className="w-12 h-1 bg-gold/20" />
-                 <div className="w-8 h-1 bg-gold/20" />
-               </div>
-            </div>
-            
-            <div className="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7986373232256!2d32.5400252!3d0.1799729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db12732b6118f%3A0xa2878ebba0ab8228!2sVee%20Hotel%20Apartment!5e0!3m2!1sen!2sug!4v1782110068157!5m2!1sen!2sug" 
+              className="absolute inset-0 w-full h-full" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>

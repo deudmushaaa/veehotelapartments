@@ -55,8 +55,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            href="https://wa.me/256776979729"
-            target="_blank"
+            href="/#booking"
             className="px-6 py-2 bg-foreground text-background text-sm uppercase tracking-widest hover:bg-gold transition-all duration-300"
           >
             Book Now
