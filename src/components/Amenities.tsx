@@ -13,7 +13,7 @@ const amenities = [
   { name: "Modern Fitness Gym", icon: Dumbbell, description: "Stay active with our fully equipped on-site fitness center." },
   { name: "On-site Restaurant", icon: ChefHat, description: "Enjoy gourmet meals prepared by our professional chefs.", link: "/about#dining", linkText: "View Menu" },
   { name: "Private Garden", icon: Trees, description: "Lush green spaces perfect for relaxation and fresh air." },
-  { name: "Airport Taxi", icon: Plane, description: "Reliable airport transfers and local shuttles available." },
+  { name: "Airport Taxi", icon: Plane, description: "Airport transfers and local shuttles are available for an additional charge to the client." },
   { name: "Eco-Solar Powered", icon: Zap, description: "Sustainable energy with backup solar power system." },
   { name: "Smart TV & Sound", icon: Tv, description: "55-inch Smart TV with cinematic soundbar system." },
   { name: "High-end Kitchen", icon: Utensils, description: "Fully equipped with oven, microwave & coffee maker." },

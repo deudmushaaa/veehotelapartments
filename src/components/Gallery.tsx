@@ -22,10 +22,12 @@ const allImages = [
   { src: "/gallery/img13.jpg", title: "View from Balcony" },
   { src: "/gallery/img14.jpg", title: "Property Landscape" },
   { src: "/gallery/img15.jpg", title: "Night Ambiance" },
-  ...Array.from({ length: 55 }).map((_, i) => ({
-    src: `/gallery/img${(i % 15) + 1}.jpg`, // Cycling for now to maintain the count
-    title: `Gallery Image ${i + 16}`
-  }))
+  { src: "/gallery/gym1.jpg", title: "Fitness Gym" },
+  { src: "/gallery/gym2.jpg", title: "Fitness Gym" },
+  { src: "/gallery/gym3.jpg", title: "Fitness Gym" },
+  { src: "/gallery/gym4.jpg", title: "Fitness Gym" },
+  { src: "/gallery/gym5.jpg", title: "Fitness Gym" },
+  { src: "/gallery/gym6.jpg", title: "Fitness Gym" },
 ];
 
 export function Gallery({ limit }: { limit?: number }) {
@@ -40,7 +42,7 @@ export function Gallery({ limit }: { limit?: number }) {
           <div className="w-24 h-[1px] bg-gold mx-auto" />
            <p className="text-lg text-foreground/60 max-w-2xl mx-auto font-sans">
             Witness the serenity and modern elegance of Vee Serviced Apartments & Hotel. 
-            {limit ? " A curated selection of our finest spaces." : " Explore all 70+ high-quality captures."}
+            {limit ? " A curated selection of our finest spaces." : ` Explore all ${allImages.length} photos.`}
           </p>
         </div>
 
