@@ -173,6 +173,9 @@ export default function AboutPage() {
               <p className="text-lg text-foreground/70 leading-relaxed">
                 We believe your experience should go beyond where you stay. That is why we created **Vee Quest Safaris Limited** to give our guests a complete, reliable, and well-managed travel experience from arrival to departure.
               </p>
+              <p className="text-sm text-foreground/60 leading-relaxed">
+                Airport pickups and drop-offs can be arranged for an additional charge, payable by the client.
+              </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
